@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum');
+
+* {
+    font-family: 'Cuprum', sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container > div {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.container > div h1 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* ESTIILO DA TABELA */
+
+.table {
+    border-spacing: 0;
+    margin: 0 auto;
+    max-height: 200px;
+}
+
+.table > thead {
+    flex: 0 0 auto;
+    width: calc(100% - 0.9em);
+}
+
+.table > tbody {
+    max-height: 211px;
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: auto;
+}
+
+.table > tbody::-webkit-scrollbar {
+    width: 3px;
+}
+
+.table > tbody::-webkit-scrollbar-thumb {
+    background: #444;
+}
+
+.table > tbody > tr {
+    width: 100%;
+}
+
+.table thead, .table tbody tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table > tbody > tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.table > tbody > tr:nth-child(odd) > td {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.table th {
+    border: 0;
+    font-size: 0.9em;
+    padding: 5px;
+    font-weight: 600;
+}
+
+/* FIM DO ESTILO DA TABELA */

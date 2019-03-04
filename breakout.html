@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Brerkout with JS</title>
+        <link rel="icon" href=""/>
+        <meta name="author" content="jeconias@olamundoweb.com.br"/>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Um joguinho com JavaScript para passar o tempo."/>
+        <meta name="URL" content=""/>
+        <meta name="language" content="portuguese"/>
+        <meta name="copyright" content="all rights"/>
+        <meta name="robots" content="INDEX, FOLLOW"/>
+        <meta name="revisit-after" content="3 days"/>
+        <meta name="reply-to" content="contato@olamundoweb.com.br"/>
+        <meta name="document-rights" content="Public"/>
+        <meta name="document-rating" content="General"/>
+        <meta name="document-state" content="Dynamic"/>
+        <meta http-equiv="Content-Language" content="PT-BR"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <!-- LOAD CSS -->
+        <link rel="stylesheet" href="./css/breakout.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h1>Informações</h1>
+                <div>
+                    <p>
+                        Breakout em JavaScript - v0.1
+                        <br/>
+                        Jeconias Santos - <a target="_blank" href="https://github.com/jeconiassantos/Breakout">gitHub</a>
+                    </p>
+                </div>
+                <table class="table" id="tableInfo">
+                    <thead>
+                        <tr>
+                            <th>Blocos</th>
+                            <th>Batida na barra</th>
+                            <th>Velociade</th>
+                            <th>Nível</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+            </div>
+
+            <canvas id="canvas" class="canvas"></canvas>
+            
+            <div>
+                <h1>Recordes</h1>
+                <div>
+                <p>
+                    Os dados são perdidos ao atualizar a página.
+                    <br/>
+                    <br/>
+                </p>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Jogador</th>
+                            <th>Tipo</th>
+                            <th>Recorde</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jeconias</td>
+                            <td>Expert</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="./js/breakout.js"></script>
+</html>
